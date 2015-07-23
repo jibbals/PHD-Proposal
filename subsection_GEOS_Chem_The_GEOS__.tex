@@ -1,15 +1,12 @@
 \subsection{GEOS-Chem}
+
 The GEOS-Chem model is a global model of atmospheric composition using meteorological observations from the Goddard Earth Observing System (GEOS) of the NASA Global Modeling Assimilation Office (GMAO). It is developed by Harvard University staff as well as users and researchers. 
 
 The Current version of GEOS-Chem (v10-01) runs globally with 47 vertical levels from the surface up to the top of the atmosphere (TOA). 
 Until recently the model could only be run at several specified horizontal resolutions defined at compile time, however this requirement is removed and the model can be run at any resolution \cite{Long_2015}.
 Datasets are assimilated as boundary conditions and drivers of this CTM are of various resolutions and exist over several areas at high resolution (0.25$^{\circ}$ x 0.3125$^{\circ}$ over North America, China, and Europe).
 
+Dust emission is considered to be dependent on surface wind speeds to the third order (\cite{Duncan_Fairlie_2007}), and this introduces problems when the large horizontal grid does not capture the sub grid wind speed distribution \cite{Ridley_2013}.
 
-
-
-
-
-  
   
   
