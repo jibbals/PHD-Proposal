@@ -1,6 +1,5 @@
 OzoneNotes.tex
 DustNotes.tex
-section_Preliminary_Literature_Review_subsection__.tex
 PreliminaryLiteratureReview.tex
 OzoneSummary.tex
 GEOS_CHEM.tex
