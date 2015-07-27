@@ -2,6 +2,6 @@ OzoneNotes.tex
 DustNotes.tex
 PreliminaryLiteratureReview.tex
 OzoneSummary.tex
-subsection_Isoprene_and_HCHO_summary__.tex
+to_delete__.tex
 GEOS_CHEM.tex
 section_PHD_Proposal_subsection_Improved__.tex
