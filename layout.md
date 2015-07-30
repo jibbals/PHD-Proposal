@@ -2,6 +2,6 @@ OzoneNotes.tex
 section_Preliminary_Literature_Review__.tex
 DustLitReview.tex
 BiogenicLitReview.tex
-GEOS_CHEM.tex
+GEOSChemLitReview.tex
 section_PHD_Proposal_subsection_Improved__.tex
 DustNotes.tex  
