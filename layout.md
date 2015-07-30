@@ -1,6 +1,6 @@
 OzoneNotes.tex
-DustNotes.tex
 PreliminaryLiteratureReview.tex
 OzoneSummary.tex
 GEOS_CHEM.tex
 section_PHD_Proposal_subsection_Improved__.tex
+DustNotes.tex  
