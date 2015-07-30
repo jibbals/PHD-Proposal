@@ -3,5 +3,5 @@ section_Preliminary_Literature_Review__.tex
 DustLitReview.tex
 BiogenicLitReview.tex
 GEOSChemLitReview.tex
-section_PHD_Proposal_subsection_Improved__.tex
+PHD_Proposal.tex
 DustNotes.tex  
