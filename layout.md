@@ -1,5 +1,5 @@
 OzoneNotes.tex
-section_Preliminary_Literature_Review__.tex
+PreliminaryLiteratureReview.tex
 DustLitReview.tex
 BiogenicLitReview.tex
 GEOSChemLitReview.tex
