@@ -5,5 +5,4 @@ BiogenicLitReview.tex
 GEOSChemLitReview.tex
 section_PHD_Proposal__.tex
 subsection_Improved_Modelling_resolution_Higher__.tex
-PHD_Proposal.tex
 DustNotes.tex
