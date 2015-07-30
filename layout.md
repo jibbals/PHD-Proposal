@@ -3,5 +3,6 @@ PreliminaryLiteratureReview.tex
 DustLitReview.tex
 BiogenicLitReview.tex
 GEOSChemLitReview.tex
+section_PHD_Proposal__.tex
 PHD_Proposal.tex
 DustNotes.tex
