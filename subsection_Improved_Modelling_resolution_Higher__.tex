@@ -7,18 +7,35 @@ This has been done already over China, North America, and Europe (\cite{Chen_200
 \subsection{Ozone intrusions}
 Ozone is present in the troposphere due to a variety of dynamical and photochemical processes, including downward  transport from the ozone-rich stratosphere and anthropogenic pollution.
 Ozone-rich air mixes irreversibly down from the stratosphere during meteorologically conducive conditions \citep{Sprenger2003,Mihalikova2012}; these are referred to as Statosphere to Troposphere Transport events (STTs). 
-In the extra-tropics, STTs most commonly occur during synoptic-scale tropopause folds \citep{Sprenger2003} and are characterised by tongues of high PV air descending to low altitudes.
+In the extra-tropics, STTs most commonly occur during synoptic-scale tropopause folds \citep{Sprenger2003} and are characterised by tongues of high Potential Vorticity (PV) air descending to low altitudes.
 These tongues become elongated and filaments separate from the tongue which mix into tropospheric air.
-Stratospheric ozone brought deeper (lower) into the troposphere is more likely to affect the surface ozone budget and tropospheric chemistry \citep{Zanis2003}.
+Stratospheric ozone brought deeper (lower) into the troposphere is more likely to affect the surface ozone budget and tropospheric chemistry \citep{Zanis2003,Langford_2009}.
 
 When looking at a vertical profile of ozone the effect of an STT is clear, with the right filter we can quantitatively observe and characterise STTs.
 Using a Fourier filter on the (TODO DESCRIBE DATA AND OWNERS) will give us the first southern hemispheric analysis of STTs.
 
 \subsection{Isoprene and VOCs}
 Another source(the main source) of ozone in the lower troposphere is chemical formation following emissions of precursor gases, including volatile organic compounds (VOCs) like isoprene, and nitrogen oxides (NOx).
-Isoprene is commonly measured by proxy through satellite HCHO vertical column densities (VCDs) \cite{Marais_2012,bauwens2013satellite}(moar cites).
+Estimates put isoprene emission at 500-750 Tg/yr \cite{Guenther_2006}, emitted by trees and shrubs mostly during the day.
+
+In Australia, biogenic ozone precursor sources are highly uncertain, impeding accurate ozone modelling and projections. These uncertainties could explain why models of formaldehyde (HCHO) over Australia are not good at reproducing observed data \cite{Stavrakou_2009}. Atmospheric HCHO data exists over Wollongong, and some campaigns have taken place elsewhere in Australia, however these do not give a full overview of the continent's emissions. Satellite-based observations do exist with good coverage but these have large uncertainties. 
+
+Determination of purely biogenic emissions from satellite-based observations is possible by filtering out biomass burnings using the fire counts and aerosol absorption optical depth(AAOD). The AATSR, Aqua, and Terra satellites have fire counts which can be used, and the EOS Aura satellite contains the AAOD measurements. These data can effectively filter satellite HCHO measurements in order to compare with biogenic models and this process has been implemented already in a similar way over South Africa \cite{Marais_2012}.
+
+HCHO is an intermediate chemical product and can be used as a proxy for determining biogenic isoprene emissions. 
+Isoprene is commonly measured by proxy through satellite HCHO vertical column densities (VCDs). HCHO, once filtered for fire plumes and anthropogenic influences, can determine isoprene emission through the use of a chemical transport model (CTM).
+This method of inference has been used successfully in several countries including North America\cite{Palmer_2003}, South America\cite{Barkley_2013}, and Africa \cite{Marais_2012}.
+
+Satellite HCHO measurements exist since 2004 (OMI) and 2006 (GOME2), and the ground based measurements over Wollongong exist since 1996. While the ground based data is spatially sparse it can be used as validation of models and satellite data. Combining the long record of measurements from Wollongong with the decadal-scale satellite data and chemical transport modelling in this PhD project will allow the first large-scale quantification of isoprene measurements in Australia, paving the way for more accurate ozone projections.
+
+4: Palmer, P.I., et al., Mapping isoprene emissions over North America using formaldehyde column observations from space. J. Geophys.
+Res., 108(D6): 4180, 2003.
+5: Stavrakou, T., et al., Evaluating the performance of pyrogenic and biogenic emission inventories against one decade of space-based formaldehyde columns. Atmos. Chem. Phys., 9: 1037-1060, 2009.
+6: Marais, E. A., Jacob, D. J., Kurosu, T. P., Chance, K., Murphy, J. G., Reeves, C., Mills, G., Casadio, S., Millet, D.B., Barkley, M. P., Paulot, F., and Mao, J.: Isoprene emissions in Africa inferred from OMI observations of formaldehyde columns, Atmos. Chem. Phys., 12, 6219-6235, doi:10.5194/acp-12-6219-2012, 2012.
+7: Barkley, M.P., et al., Top down isoprene emissions over tropical South America inferred from SCIAMACHY and OMI formaldehyde columns. J. Geophys. Res.,118:6849-6868, 2013.
 
 \subsection{Dust emission and deposition validation}
 Notes from Paper and validation of GOES dust simulation?
+  
   
   
