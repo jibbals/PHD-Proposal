@@ -1,13 +1,19 @@
 \subsection{GEOS-Chem}
 
-The GEOS-Chem model is a global model of atmospheric composition using meteorological observations from the Goddard Earth Observing System (GEOS) of the NASA Global Modeling Assimilation Office (GMAO). It is developed by Harvard University staff as well as users and researchers. 
+The GEOS-Chem model is a global model of atmospheric composition using meteorological observations from the Goddard Earth Observing System (GEOS) of the NASA Global Modeling Assimilation Office (GMAO). 
+It is developed by Harvard University staff as well as users and researchers. 
+Several driving meteorological fields exist with different resolutions, following is a description of these fields and their availability. 
+GEOS-4 natively has 1 by 1.25$^\circ$ horizontal resolution with 55 vertical levels and is available from 1985 to 2006. 
+MERRA natively has 0.5 by 2/3$^\circ$ horizontal resolution with 72 vertical levels and is available between 1979 to 2010.
+GEOS-5 natively has 0.5 by 2/3$^\circ$ horizontal resolution with 72 vertical levels and is available from Dec. 2003 until mid 2013.
+GEOS-FP natively has 0.25 by 0.3125$^\circ$ horizontal resolution with 72 vertical levels and is available from 2012 onwards.
+MERRA and GEOS-FP have temporal resolution of 3 hours, except for surface quantities and mixing depths which are resolved to 1 hour.
+GEOS-4 and GEOS-5 have temporal resolution of 6 hours, except for surface quantities and mixing depths which are resolved to 3 hours.
 
-The Current version of GEOS-Chem (v10-01) runs globally with 47 vertical levels from the surface up to the top of the atmosphere (TOA). 
-Until recently the model could only be run at several specified horizontal resolutions defined at compile time, however this requirement has been relaxed and the model can now be run at any resolution(where emissions inventories exist? TODO: Ask Jenny) \cite{Long_2015}.
+Since the release of v10-01, GEOS-Chem is grid-independent allowing any horizontal resolution to be run globally. 
+It is also compatible with Earth System Modeling Framework (ESMF), allowing GEOS-Chem to run as the chemical module for Earth System Models (ESMs). 
+GEOS-Chem allows distributed-memory parallelisation which can improve chemistry simulation performance almost linearly with increased cores (at least up to 240) \cite{Long_2015}.
+
 Datasets are assimilated as boundary conditions and drivers of this CTM are of various resolutions and exist over several areas at high resolution (0.25$^{\circ}$ x 0.3125$^{\circ}$ over North America, China, and Europe).
-
-Dust emission is considered to be dependent on surface wind speeds to the third order \citep{Duncan_Fairlie_2007}, and this introduces problems when the large horizontal grid does not capture the sub grid wind speed distribution \cite{Ridley_2013}.
-  
-  
   
   
