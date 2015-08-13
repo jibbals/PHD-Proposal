@@ -1,7 +1,7 @@
 OzoneNotes.tex
 PreliminaryLiteratureReview.tex
 DustLitReview.tex
-BiogenicLitReview.tex
+OzoneLitReview.tex
 GEOSChemLitReview.tex
 SatellitesLitReview.tex
 section_Research_Proposal__.tex
