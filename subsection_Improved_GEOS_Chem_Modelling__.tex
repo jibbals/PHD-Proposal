@@ -7,6 +7,9 @@ This has been done already over China \cite{Chen_2009}, North America, and Europ
 First sufficient disk space will be required to hold several years worth of high resolution meteorological data and emissions, this is expected to be to the order of 100s of gigabytes.
 After determining the desired spatial and temporal boundaries for improved resolution, raw data will be downloaded, verified, and re-gridded using partially written code from Bob Yantosca.
 Finally emissions data needs to be reworked over the domain, ensuring emissions factors and chemistry is maintained.
+This last requirement may be eased by the new HEMCO module implemented within the ESMF environment (compatible with GEOS-Chem v10) which recalculates emissions on any user specified grid.
+
+
 
 \subsection{Isoprene and VOCs model validation over Australia}
 Another source(the main source) of ozone in the lower troposphere is chemical formation following emissions of precursor gases, including volatile organic compounds (VOCs) like isoprene, and nitrogen oxides (NOx).
@@ -31,6 +34,7 @@ Using a Fourier filter on the (TODO DESCRIBE DATA AND OWNERS) will give us the f
 Notes from Paper and validation of GOES dust simulation?
   
 Dust emission is considered to be dependent on surface wind speeds to the third order \citep{Duncan_Fairlie_2007}, and this introduces problems when the large horizontal grid does not capture the sub grid wind speed distribution \cite{Ridley_2013}.
+  
   
   
   
