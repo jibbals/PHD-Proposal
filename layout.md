@@ -6,5 +6,4 @@ GEOSChemLitReview.tex
 SatellitesLitReview.tex
 section_Research_Proposal__.tex
 subsection_Improved_GEOS_Chem_Modelling__.tex
-DustNotes.tex
 SatelliteExtra.tex
