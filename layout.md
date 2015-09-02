@@ -5,6 +5,6 @@ subsection_Isoprene_and_formaldehyde_HCHO__.tex
 GEOSChemLitReview.tex
 SatellitesLitReview.tex
 section_Research_Proposal__.tex
-subsection_Improved_GEOS_Chem_Modelling__.tex
+Improved_GEOS_Chem.tex
 rior_Work.tex
 section_Prior_Work__.tex
