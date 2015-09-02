@@ -1,4 +1,3 @@
-OzoneNotes.tex
 PreliminaryLiteratureReview.tex
 DustLitReview.tex
 OzoneLitReview.tex
