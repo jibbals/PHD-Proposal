@@ -9,4 +9,5 @@ Improved_GEOS_Chem.tex
 section_Prior_Work_subsection_Isoprene__.tex
 rior_Work.tex
 subsection_Dust_Working_with_Doctors__.tex
+figures/AeronetGood/AeronetGood.png
 section_Prior_Work__.tex
