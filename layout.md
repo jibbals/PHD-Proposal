@@ -8,4 +8,3 @@ section_Research_Proposal__.tex
 Improved_GEOS_Chem.tex
 to_delete__.tex
 figures/AeronetGood/AeronetGood.png
-section_Prior_Work__.tex
