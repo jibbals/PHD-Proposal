@@ -3,7 +3,6 @@ DustLitReview.tex
 OzoneLitReview.tex
 Isoprene_and_formaldehyde.tex
 GEOSChemLitReview.tex
-SatellitesLitReview.tex
 section_Research_Proposal__.tex
 Improved_GEOS_Chem.tex
 to_delete__.tex
