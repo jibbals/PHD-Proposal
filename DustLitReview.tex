@@ -1,11 +1,27 @@
 \subsection{Natural aerosol emissions in Australia}
 Natural emissions in Australia are important due to the large population sparse areas from where dust, isoprene, and other important aerosols are released.
 The Australian outback is described by extremely large and diverse environments, mixed with a dearth of in-situ measurements this leads to uncertainty in estimates of aerosol densities and distributions.
-One source of information which covers the entirety of Australia is remote sensing performed from satellites which overpass daily and record reflected solar spectra.
-These can be used to garner details of several chemicals (including O3, HCHO, NO2) as well as estimates of their distribution in vertical columns over the land.
-While satellite data is very good for covering huge areas (the entire earth) it only exists at a particular time of day, is subject to cloud cover, and generally does not have fine horizontal or vertical resolution.
-A problem with the vertical profiles from satellites is that they are estimate based on a single piece of information, created by convolving the sensitivity of the remote sensing instrument to various atmospheric depths and a prior guess at the expected vertical profile.
 
+One source of information which covers the entirety of Australia is remote sensing performed from satellites which overpass daily and record reflected solar spectra.
+These can be used to garner details of several chemicals as well as estimates of their distribution in vertical columns over the land.
+While satellite data is very good for covering huge areas (the entire earth) it only exists at a particular time of day, is subject to cloud cover, and generally does not have fine horizontal or vertical resolution.
+A problem with the vertical profiles from satellites is that they are estimates based on forward radiative transfer modelling.
+This leaves us with a best guess for chemical concentrations at any altitude which may need verification or adjustment.
+
+Several satellites provide long term trace gas data with near complete global coverage, including GOME (1, 2 metop A, and 2 metop B), OMI AURA, and SCIAMACHY.
+These satellites are on Low Earth Orbit (LEO) trajectories and overpass any area up to once per day. 
+They record near nadir reflected spectra between around 250-700~nm split into spectral components at around $0.3$~nm in order to calculate trace gases including O$_3$, NO$_2$, BrO, SO$_2$, and HCHO.
+
+
+\subsection{Chemical Transport Models (CTMs)}
+CTMs simulate production, loss, transport, and deposition of chemical species.
+Generally CTMs will solve the continuity equations numerically for chemicals under inspection using one or both of the Eulerian (box) or Lagrangian (puff) frames of reference.
+Where measurements exist they can be fed into CTMs as boundary and/or initial conditions in order to both examine real world concentrations and limit model uncertainty and divergence.
+GEOS-Chem is the CTM which I am interested in and is a 3-D global CTM for atmospheric composition with transport driven by meteorological input from the Goddard Earth Observing System (GEOS) of the NASA Global Modeling and Assimilation Office (GMAO).
+GEOS-Chem simulates more than 100 chemical species from the earth's surface up to the top of the atmosphere and can be used in combination with remote and in-situ sensing data to give a confident estimate of elements in remote areas.
+
+Combining satellite and modelled data could allow for improved accuracy in records of natural Australian chemical sources as well as allow analysis of past and potential impacts of climate and environmental changes.
+Due to the low availability of in-situ data covering most of the Australian outback an analysis of the modelled and remote sensed data could provide improved accuracy for global records of emissions which would in turn improve the accuracy or confidence of many models which are constrained or driven by these global inventories.
 
 
 \subsection{Dust, aerosols, and climate}
