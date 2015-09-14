@@ -3,7 +3,7 @@ NaturalAerosols.tex
 figures/TN_GOME_SPECTRA/TN_GOME_SPECTRA.jpg
 CTMs.tex
 OzoneBG.tex
-Isoprene_and_formaldehyde.tex
+Isop and HCHO .tex
 DustBG.tex
 GEOSChemLitReview.tex
 section_Research_Proposal__.tex
