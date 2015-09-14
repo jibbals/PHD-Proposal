@@ -1,5 +1,6 @@
 PreliminaryLiteratureReview.tex
 NaturalAerosols.tex
+figures/TN_GOME_SPECTRA/TN_GOME_SPECTRA.jpg
 CTMs.tex
 OzoneLitReview.tex
 Isoprene_and_formaldehyde.tex
