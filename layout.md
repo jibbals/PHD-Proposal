@@ -8,5 +8,6 @@ DustBG.tex
 GEOSChemLitReview.tex
 section_Research_Proposal__.tex
 Ozone Proposal.tex
+figures/seasonaltropozone/seasonaltropozone.png
 Improving GC.tex
 figures/AeronetGood/AeronetGood.png
