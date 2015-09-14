@@ -9,5 +9,4 @@ GEOSChemLitReview.tex
 section_Research_Proposal__.tex
 Ozone Proposal.tex
 Improving GC.tex
-to_delete__.tex
 figures/AeronetGood/AeronetGood.png
