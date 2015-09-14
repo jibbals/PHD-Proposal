@@ -6,6 +6,6 @@ GEOSChemLitReview.tex
 SatellitesLitReview.tex
 section_Research_Proposal__.tex
 Improved_GEOS_Chem.tex
-subsection_Dust_Working_with_Doctors__.tex
+to_delete__.tex
 figures/AeronetGood/AeronetGood.png
 section_Prior_Work__.tex
