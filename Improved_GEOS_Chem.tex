@@ -1,3 +1,10 @@
+\subsection{Ozone}
+Working with doctors Simon Alexander and Robyn Schofield, records of ozone profiles over Davis, Macquarie, and Melbourne have been analysed and filtered to quantitatively determine instances of Stratosphere to Troposphere Transport events (STTs).
+
+The vertical profiles of ozone volume mixing ratio are linearly interpolated to a regular grid with 20m resolution up to 14km altitude and are then bandpass filtered so as to retain perturbations on altitude scales between 0.5km - 5km. The choice of band limits is set empirically, but we note that to define an STT event, a clear increase above the background ozone level is needed, and a vertical limit of $\sim 5$~km removes seasonal-scale effects. The ozone perturbation profile is analysed at altitudes from 2~km above the surface (to avoid surface pollution events) and 1~km below the tropopause (to avoid the sharp transition to stratospheric air producing spurious false positives). Perturbations above the 99~th percentile (locally) of all ozone levels are initially classified as STT events.
+
+TODO: More Outcomes and Results.
+
 \subsection{Improved GEOS-Chem Modelling resolution}
 Higher resolution modelling over Australia will allow for both improved validation with in situ measurements, and regional and city scale simulation analysis. 
 Dust simulation in particular can be greatly improved with finer surface wind resolution and will be one of the areas I will focus on with validation against both in situ and satellite measurements of AOD and dust concentrations across Australia.
@@ -8,7 +15,6 @@ First sufficient disk space will be required to hold several years worth of high
 After determining the desired spatial and temporal boundaries for improved resolution, raw data will be downloaded, verified, and re-gridded using partially written code from Bob Yantosca.
 Finally emissions data needs to be reworked over the domain, ensuring emissions factors and chemistry is maintained.
 This last requirement may be eased by the new HEMCO module implemented within the ESMF environment (compatible with GEOS-Chem v10) which recalculates emissions on any user specified grid.
-
 
 
 \subsection{Isoprene and VOCs model validation over Australia}
@@ -29,9 +35,14 @@ Satellite HCHO measurements exist since 2004 (OMI) and 2006 (GOME2), and the gro
 When looking at a vertical profile of ozone the effect of STT is clear, with the right filter we can quantitatively observe and characterise STTs.
 Using a Fourier filter on the ozonesonde profiles will give us the first southern hemispheric analysis of STTs.
 
+\subsection{Dust}
+Working with Doctors Jenny Fisher and Sam Marx, using GEOS-Chem model version 9.02 and comparing against AERONET and CoDii in situ data allows a model validation in an area which is largely estimated due to lack of ground based measurements.
 
-\subsection{Australian model dust validation}
-Notes from Paper and validation of GOES dust simulation?
+Running GEOS-Chem at 2x2.5 resolution, using offline GEOS-5 meteorological fields and DEAD dust mobilisation is based on surface wind speeds to the third power implemented by \citet{Duncan_Fairlie_2007}. We only model emission, deposition, and transport of dust and carbon, which allows for fast runtime. Running the full chemical model to see if dust was affected by other tracers found only negligible differences (in the order of 10-5 percent). With 2004 as the spin up year we stored monthly average columns of sources and sinks and AOD until November 2012.
+
+We did a second run of the model with the Eyre basin dust source zeroed out, giving us some sense of the importance of the key Australian dust source region.
+
+TODO: More notes from Paper and validation of GOES dust simulation?
   
 Dust emission is considered to be dependent on surface wind speeds to the third order \citep{Duncan_Fairlie_2007}, and this introduces problems when the large horizontal grid does not capture the sub grid wind speed distribution \cite{Ridley_2013}.
   
