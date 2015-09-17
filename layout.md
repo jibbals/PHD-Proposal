@@ -3,6 +3,7 @@ NaturalAerosols.tex
 figures/TN_GOME_SPECTRA/TN_GOME_SPECTRA.jpg
 Satellites_can_use_Differential_Optical__.tex
 CTMs.tex
+figures/boxmodelbox/boxmodelbox.gif
 OzoneBG.tex
 Isop and HCHO .tex
 DustBG.tex
