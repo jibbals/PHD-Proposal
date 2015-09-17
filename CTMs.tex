@@ -1,10 +1,17 @@
 \subsection{Chemical Transport Models (CTMs)}
 CTMs simulate production, loss, transport, and deposition of chemical species.
-Generally CTMs will solve the continuity equations numerically for chemicals under inspection using one or both of the Eulerian (box) or Lagrangian (puff) frames of reference.
-Where measurements exist they can be fed into CTMs as boundary and/or initial conditions in order to both examine real world concentrations and limit model uncertainty and divergence.
-GEOS-Chem is the CTM which I am interested in and is a 3-D global CTM for atmospheric composition with transport driven by meteorological input from the Goddard Earth Observing System (GEOS) of the NASA Global Modeling and Assimilation Office (GMAO).
-GEOS-Chem simulates more than 100 chemical species from the earth's surface up to the top of the atmosphere and can be used in combination with remote and in-situ sensing data to give a confident estimate of elements in remote areas.
+This is generally done using one or both of the Eulerian (box) or Lagrangian (puff) frames of reference.
+CTMs normally solve the continuity equations while running chemical production and loss models for chemicals under inspection. Together this allows us to record the chemical densities and transport over time as the model runs.
+Continuity equations describe transport of a conserved quantity such as mass and momentum, solved together with production and loss of a chemical we have a CTM.
+The type of models I'm interested in use the Eulerian frame of reference, where the atmosphere is broken up into 3-D boxes within(between) which densities(transports) are calculated and stored for arbitrary sequential steps in time.
 
-Combining satellite and modelled data could allow for improved accuracy in records of natural Australian chemical sources as well as allow analysis of past and potential impacts of climate and environmental changes.
+Where measurements exist they can be fed into CTMs as boundary and/or initial conditions in order to examine real world concentrations and limit model uncertainty.
+GEOS-Chem is the CTM which I am interested in and is a 3-D global CTM for atmospheric composition with transport driven by meteorological input from the Goddard Earth Observing System (GEOS) of the NASA Global Modeling and Assimilation Office (GMAO).
+GEOS-Chem simulates more than 100 chemical species from the earth's surface up to the top of the atmosphere and can be used in combination with remote and in-situ sensing data to give a verifiable estimate of atmospheric gases and aerosols.
+
+Combining satellite and modelled data could allows us to test our understanding of natural processes and gives us a sanity check on what is going now and into the future over Australia.
 Due to the low availability of in-situ data covering most of the Australian outback an analysis of the modelled and remote sensed data could provide improved accuracy for global records of emissions which would in turn improve the accuracy or confidence of many models which are constrained or driven by these global inventories.
 
+(LINK TO OZONE HERE)
+
+One of the species both modelled by GEOS-Chem and measured by satellite is formaldehyde, which is a proxy for measuring isoprene which plays a large role in background ozone levels which can cause massive problems in populous or agricultural areas.
