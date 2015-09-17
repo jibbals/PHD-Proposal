@@ -4,6 +4,7 @@ Satellites_can_use_Differential_Optical__.tex
 CTMs.tex
 figures/boxmodelbox/boxmodelbox.gif
 OzoneBG.tex
+figures/NEPMStandards/NEPMStandards.png
 Isop and HCHO .tex
 DustBG.tex
 GEOSChemLitReview.tex
