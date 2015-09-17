@@ -8,6 +8,7 @@ OzoneBG.tex
 Isop and HCHO .tex
 DustBG.tex
 GEOSChemLitReview.tex
+subsection_Satellites_of_Interest_Several__.tex
 section_Research_Proposal__.tex
 Ozone Proposal.tex
 figures/seasonaltropozone/seasonaltropozone.png
