@@ -12,6 +12,23 @@ Several satellite data sets are publicly available and have been used to show in
 Satellite retrievals of atmospheric HCHO are made either by fitting backscattered spectrum absorption (eg: \citet{Chance_2000}) or by using DOAS (eg: \citet{leue_2001}).
 This integral of HCHO abundance along the viewing path is called the slant column (SC), and the air mass factor (AMF) is the ratio of the SC to the vertical column.
 The AMF is calculated by correcting the satellite viewing angle and the solar zenith angle for atmospheric scattering and surface albedo.
-(TODO: MORE DETAILS FOR HCHO DERIVATION OF ISOP)
+
+(TODO: more info on HCHO calculation?)
+
+The methodology for calculating VOCs from HCHO is laid out in \citet{Palmer_2003} and needs to take into account the expected lifetime and reaction rates of the precursor VOCs and HCHO.
+Assuming a steady state between the atmospheric HCHO column (\Omega molecules$cm^{-2}$)  produced by oxidation of VOCs (VOC$_i$) and no horizontal transport:
+\begin{eqnarray*}
+\Omega = \frac{1}{k_{HCHO}} \sum_{i} Y_i E_i
+\end{eqnarray*}
+where $Y_i$ is HCHO yields per C atom and $E_i$ is emission fluxes ( C atoms $cm^{-2}s^{-1}$).
+And assuming HCHO is produced quickly from short-lived intermediates we get
+\begin{eqnarray*}
+VOC \overset{k_i}{\rightarrow} Y_i HCHO
+\end{eqnarray*}
+
+Horizontal transport 'smears' this signal so that source location would need to be calculated using windspeeds and loss rates.
+In high NOx environments where HCHO has a lifetime in the order of 30 minutes it can be used to map isoprene emissions with spatial resolution from 10-100 kms which is comparable to satellite resolutions.
+For conditions where VOCs have a lifetime of days are the major HCHO contributors a complex inversion would be required to map HCHO columns to VOC emissions.
+This is due to the 'smearing' of source emissions at a greater range (order of 1000 kms) than the satellite column resolution.
 
 TODO What does HCHO and Isoprene look like in Australia !!!
