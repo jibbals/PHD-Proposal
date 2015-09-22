@@ -18,5 +18,6 @@ figures/MelbEvent20050203/MelbEvent20050203.png
 Improving GC.tex
 subsection_Isoprene_and_VOCs_model__.tex
 subsection_Quantifying_stratosphere_to_troposphere__.tex
+subsection_Dust_Working_with_Doctors__.tex
 figures/AeronetGood/AeronetGood.png
 FutureGC.tex
