@@ -13,8 +13,6 @@ Satellite retrievals of atmospheric HCHO are made either by fitting backscattere
 This integral of HCHO abundance along the viewing path is called the slant column (SC), and the air mass factor (AMF) is the ratio of the SC to the vertical column.
 The AMF is calculated by correcting the satellite viewing angle and the solar zenith angle for atmospheric scattering and surface albedo.
 
-(TODO: more info on HCHO calculation?)
-
 The methodology for calculating VOCs from HCHO is laid out in \citet{Palmer_2003} and needs to take into account the expected lifetime and reaction rates of the precursor VOCs and HCHO.
 Assuming a steady state between the atmospheric HCHO column ($\Omega$ molecules $cm^{-2}$)  produced by oxidation of VOCs (VOC$_i$) and no horizontal transport:
 \begin{eqnarray*}
@@ -26,12 +24,14 @@ And assuming HCHO is produced quickly from short-lived intermediates we get
 VOC \overset{k_i}{\rightarrow} Y_i HCHO
 \end{eqnarray*}
 
+Inferring the VOC emissions then requires estimates of the HCHO yield (Y$_i$) which can be attained via modelling as done in \citet{Millet_2006} where GEOS-Chem and Master Chemical Mechanism (MCM) where both used for this.
+
 Horizontal transport 'smears' this signal so that source location would need to be calculated using windspeeds and loss rates.
 In high NOx environments where HCHO has a lifetime in the order of 30 minutes it can be used to map isoprene emissions with spatial resolution from 10-100 kms which is comparable to satellite resolutions.
 For conditions where VOCs have a lifetime of days are the major HCHO contributors a complex inversion would be required to map HCHO columns to VOC emissions.
 This is due to the 'smearing' of source emissions at a greater range (order of 1000 kms) than the satellite column resolution.
 
-TODO What does HCHO and Isoprene look like in Australia !!!
+An alternative source of isoprene emissions exists: The Model of Emissions of Gases and Aerosols from Nature (MEGAN), which uses leaf area index, forest canopy modelling, and plant functional type emission factors to generate terrestrial isoprene emissions.
 
 Using satellite data from 1995ish(TODO Specify year when satellite measurements began) we have a broad measure of seasonal and medium term trends of HCHO over Australia.
 These measurement can be checked against modeled estimates of isoprene using the HCHO proxy as has been done in North America using satellite and aircraft data \cite{Millet_2006}, as well as in Africa \cite{Marais_2014}.
