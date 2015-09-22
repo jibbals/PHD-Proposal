@@ -17,3 +17,4 @@ figures/seasonaltropozone/seasonaltropozone.png
 figures/MelbEvent20050203/MelbEvent20050203.png
 Improving GC.tex
 figures/AeronetGood/AeronetGood.png
+section_Future_schedule_subsection_GEOS__.tex
