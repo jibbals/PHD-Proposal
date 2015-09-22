@@ -1,8 +1,10 @@
 \subsection{Chemical Transport Models (CTMs)}
 CTMs simulate production, loss, transport, and deposition of chemical species.
 This is generally done using one or both of the Eulerian (box) or Lagrangian (puff) frames of reference.
-CTMs normally solve the continuity equations while running chemical production and loss models for chemicals under inspection. Together this allows us to record the chemical densities and transport over time as the model runs.
+CTMs normally solve the continuity equations while running chemical production and loss models for chemicals under inspection. 
 Continuity equations describe transport of a conserved quantity such as mass and momentum, solved together with production and loss of a chemical we have a CTM.
+This allows us to record the chemical densities and transport over time as a model runs.
+
 The type of model best suited to modelling the entire earth uses the Eulerian frame of reference, where the atmosphere is broken up into 3-D boxes with densities and transports calculated and stored for arbitrary sequential steps in time at each location.
 The mass balance equation must be satisfied in any realistic long term box model and is as follows: 
 \begin{eqnarray*}
@@ -10,7 +12,7 @@ The mass balance equation must be satisfied in any realistic long term box model
     &=& F_{in} + E + P - F_{out} - L - D \end{eqnarray*}
 where m is mass of a chemical and the other terms are as described in figure \ref{fig:boxModel}.
 
-If measurements exist they can be fed into CTMs as boundary and/or initial conditions in order to examine real world concentrations.
+If measurements exist they can be fed into CTMs as boundary and/or initial conditions in order to examine and reproduce real world concentrations.
 Chemical production and loss models for various species can be run while using meteorological data to drive the transport within these models.
 GEOS-Chem is a well supported CTM with state of the science chemistry modelling which runs globally using a 3-D Eulerian frame of reference focused on atmospheric composition with transport driven by meteorological input from the Goddard Earth Observing System (GEOS) of the NASA Global Modeling and Assimilation Office (GMAO).
 GEOS-Chem simulates more than 100 chemical species from the earth's surface up to the top of the atmosphere and can be used in combination with remote and in-situ sensing data to give a verifiable estimate of atmospheric gases and aerosols.
