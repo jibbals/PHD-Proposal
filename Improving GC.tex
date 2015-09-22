@@ -10,42 +10,5 @@ First sufficient disk space will be required to hold several years worth of high
 After determining the desired spatial and temporal boundaries for improved resolution, raw data will be downloaded, verified, and re-gridded using partially written code from Bob Yantosca.
 Finally emissions data needs to be reworked over the domain, ensuring emissions factors and chemistry is maintained.
 This last requirement may be eased by the new HEMCO module implemented within the ESMF environment (compatible with GEOS-Chem v10) which recalculates emissions on any user specified grid.
-
-
-\subsection{Isoprene and VOCs model validation over Australia}
-Another source(the main source) of ozone in the lower troposphere is chemical formation following emissions of precursor gases, including volatile organic compounds (VOCs) like isoprene, and nitrogen oxides (NOx).
-Estimates put isoprene emission at roughly 550 Tg/yr \cite{Guenther_2006, Monks_2014}, emitted by trees and shrubs mostly during the day.
-
-In Australia, biogenic ozone precursor sources are highly uncertain, impeding accurate ozone modelling and projections. These uncertainties could explain why models of formaldehyde (HCHO) over Australia are not good at reproducing observed data \cite{Stavrakou_2009}. Atmospheric HCHO data exists over Wollongong, and some campaigns have taken place elsewhere in Australia, however these do not give a full overview of the continent's emissions. Satellite-based observations do exist with good coverage but these have large uncertainties. 
-
-Determination of purely biogenic emissions from satellite-based observations is possible by filtering out biomass burnings using the fire counts and aerosol absorption optical depth(AAOD). The AATSR, Aqua, and Terra satellites have fire counts which can be used, and the EOS Aura satellite contains the AAOD measurements. These data can effectively filter satellite HCHO measurements in order to compare with biogenic models and this process has been implemented already in a similar way over South Africa \cite{Marais_2012}.
-
-HCHO is an intermediate chemical product and can be used as a proxy for determining biogenic isoprene emissions. 
-Isoprene is commonly measured by proxy through satellite HCHO vertical column densities (VCDs). HCHO, once filtered for fire plumes and anthropogenic influences, can determine isoprene emission through the use of a chemical transport model (CTM).
-This method of inference has been used successfully in several countries including North America\cite{Palmer_2003}, South America\cite{Barkley_2013}, and Africa \cite{Marais_2012}.
-
-Satellite HCHO measurements exist since 2004 (OMI) and 2006 (GOME2), and the ground based measurements over Wollongong exist since 1996. While the ground based data is spatially sparse it can be used as validation of models and satellite data. Combining the long record of measurements from Wollongong with the decadal-scale satellite data and chemical transport modelling in this PhD project will allow the first large-scale quantification of isoprene measurements in Australia, paving the way for more accurate ozone projections.
-
-\subsection{Quantifying stratosphere to troposphere ozone intrusions}
-When looking at a vertical profile of ozone the effect of STT is clear, with the right filter we can quantitatively observe and characterise STTs.
-Using a Fourier filter on the ozonesonde profiles will give us the first southern hemispheric analysis of STTs.
-
-\subsection{Dust}
-Working with Doctors Jenny Fisher and Sam Marx, using GEOS-Chem model version 9.02 and comparing against AERONET and CoDii in situ data allows a model validation in an area which is largely estimated due to lack of ground based measurements.
-
-Running GEOS-Chem at 2x2.5 resolution, using offline GEOS-5 meteorological fields and DEAD dust mobilisation is based on surface wind speeds to the third power implemented by \citet{Duncan_Fairlie_2007}. We only model emission, deposition, and transport of dust and carbon, which allows for fast runtime. Running the full chemical model to see if dust was affected by other tracers found only negligible differences (in the order of 10-5 percent). With 2004 as the spin up year we stored monthly average columns of sources and sinks and AOD until November 2012.
-
-We did a second run of the model with the Eyre basin dust source zeroed out, giving us some sense of the importance of the key Australian dust source region.
-
-TODO: More notes from Paper and validation of GOES dust simulation?
-  
-Dust emission is considered to be dependent on surface wind speeds to the third order \cite{Duncan_Fairlie_2007}, and this introduces problems when the large horizontal grid does not capture the sub grid wind speed distribution \cite{Ridley_2013}.
-  
-  
-  
-  
-  
-  
-  
   
   
