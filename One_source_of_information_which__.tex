@@ -8,8 +8,10 @@ Satellites can use Differential Optical Absorption Spectroscop (DOAS) techniques
 DOAS methods can be heavily influenced by the initial estimates of a trace gas profile (the a priori) which is often produced by modelling, so when comparing models of these trace gases to satellite measurements extra care needs to be taken to avoid introducing bias from unrealistic a priori assumptions.
 A way to remove these a priori influences in order to compare models and satellites is through the satellite's averaging kernal, which is a measure of the sensitivity of the instrument to the trace gas's radiance at various heights multiplied by the sensitivity of the DOAS technique's forward radiative transfer model (RTM) to the amount of trace gas at various heights near the a priori \cite{Eskes_2003}.
 The RTM used in DOAS techniques is based on Beer's law relating the attenuation of light to the properties of the medium it travels through.
+Beers law states that $ T = I/I_0 = \exp{-\tau} $ with T being transmittance, \tau being optical depth, and I, I$_0$ being radiation intensity at instrument and source respectively.
+Using $ \tau_i = \int \rho_i \beta_i ds $ gives us:
 $$ I = I_0 \exp \left( \Sigma_i \int \rho_i \beta_i ds \right) $$
-Where I is radiation intensity, i represents a chemical species index, $\rho$ is a species density, and $\beta$ is the scattering and absorption cross section area.
+Where i represents a chemical species index, $\rho$ is a species density(molecules per cm$^3$), $\beta$ is the scattering and absorption cross section area (cm$^2$), and the integral over ds represents integration over the path from light source to instrument.
 The forward RTM actually used by satellites involves functions representing extinction from Mie and Rayleigh scattering, and the efficiency of these on intensities from the trace gas under inspection, as well as accounting for various atmospheric parameters which may or may not be estimated (e.g. albedo).
 Finally to convert the trace gas profile from a reflected solar radiance column (slanted) into a purely vertical column requires calculations of an air mass factor (AMF) due to the non strict path of light measured by the instrument.
 The AMF is normally a scalar value for each horizontal grid point which will equal the ratio of the total vertical column density to the total slant column density.
