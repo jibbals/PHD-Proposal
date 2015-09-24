@@ -5,7 +5,7 @@ Additionally vertical profiles from satellites are estimates based on forward ra
 This leaves us with a best guess for chemical concentrations at any altitude which may need verification or adjustment.
 
 Satellites can use Differential Optical Absorption Spectroscop (DOAS) techniques with radiative transfer calculations on solar radiation absorption spectra to measure trace gases in vertical columns.
-DOAS methods can be heavily influenced by the initial estimates of a trace gas profile (the a priori) which is often produced by modelling, so when comparing models of these trace gases to satellite measurements extra care needs to be taken to avoid introducing bias.
+DOAS methods can be heavily influenced by the initial estimates of a trace gas profile (the a priori) which is often produced by modelling, so when comparing models of these trace gases to satellite measurements extra care needs to be taken to avoid introducing bias from unrealistic a priori assumptions.
 A way to remove these a priori influences in order to compare models and satellites is through the satellite's averaging kernal, which is a measure of the sensitivity of the instrument to the trace gas's radiance at various heights multiplied by the sensitivity of the DOAS technique's forward radiative transfer model (RTM) to the amount of trace gas at various heights near the a priori \cite{Eskes_2003}.
 The (RTM) used in DOAS techniques is based on Beer's law relating the attenuation of light to the properties of the medium it travels through.
 $$ I = I_0 \exp \left( \Sigma_i \int \rho_i \beta_i ds \right) $$
