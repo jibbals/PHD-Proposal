@@ -2,8 +2,8 @@
 
 Biogenic isoprene emissions are far greater than anthropogenic emissions of VOCs \cite{Guenther_2006}. 
 The estimates for isoprene emissions lack verification especially over Australia where very little work has been done to measure biogenic VOCs (BVOCs) like isoprene and monoterpenes.
-This lack of accuracy in BVOC emissions has a large effect on determining with confidence the sources and distribution of pollutants including ozone and other greenhouse gases (GHGs).
-Accuracy in VOC measurements is important: it has been shown that even the diurnal pattern of isoprene emissions has an effect on modelling ground level ozone \cite{Hewitt_2011}.
+This lack of accuracy in BVOC emissions has a large effect on determining with confidence the sources and distribution of pollutants including ozone and organic aerosols.
+Accuracy in VOC measurements is important: it has been shown that even the diurnal pattern of isoprene emissions has an effect on modelling ground level ozone \cite{Hewitt_2011}(TODO: several isop->o3 refs).
 
 The main NMVOC is isoprene, with emissions estimated at 500 Tg yr$^{-1}$ \cite{Guenther_2006} which is hard to directly measure, instead formaldehyde is often used as a proxy \cite{Marais_2012,bauwens2013satellite}.
 Satellites can use DOAS techniques with radiative transfer calculations on solar radiation absorption spectra to measure column HCHO.
@@ -13,22 +13,22 @@ Satellite retrievals of atmospheric HCHO are made either by fitting backscattere
 This integral of HCHO abundance along the viewing path is called the slant column (SC), and the air mass factor (AMF) is the ratio of the SC to the vertical column.
 The AMF is calculated by correcting the satellite viewing angle and the solar zenith angle for atmospheric scattering and surface albedo.
 
-The methodology for calculating VOCs from HCHO is laid out in \citet{Palmer_2003} and needs to take into account the expected lifetime and reaction rates of the precursor VOCs and HCHO.
-Assuming a steady state between the atmospheric HCHO column ($\Omega$ molecules $cm^{-2}$)  produced by oxidation of VOCs (VOC$_i$) and no horizontal transport:
+The methodology for calculating VOCs from HCHO is laid out in \citet{Palmer_2003} and takes into account the expected lifetime and reaction rates of the precursor VOCs and HCHO.
+Assuming HCHO is produced quickly from short-lived intermediates we get
+\begin{eqnarray*}
+VOC_i \overset{k_i}{\rightarrow} Y_i HCHO
+\end{eqnarray*}
+Then assuming a steady state between the atmospheric HCHO column ($\Omega$ molecules $cm^{-2}$)  produced by oxidation of VOCs (VOC$_i$) and no horizontal transport:
 \begin{eqnarray*}
 \Omega = \frac{1}{k_{HCHO}} \sum_{i} Y_i E_i
 \end{eqnarray*}
 Where i indexes a chemical species, $Y_i$ is HCHO yields per C atom and $E_i$ is emission fluxes ( C atoms $cm^{-2}s^{-1}$).
-And assuming HCHO is produced quickly from short-lived intermediates we get
-\begin{eqnarray*}
-VOC \overset{k_i}{\rightarrow} Y_i HCHO
-\end{eqnarray*}
 
 Inferring the VOC emissions then requires estimates of the HCHO yield (Y$_i$) which can be attained via modelling as done in \citet{Millet_2006} where GEOS-Chem and Master Chemical Mechanism (MCM) where both used for this.
 
 Horizontal transport 'smears' this signal so that source location would need to be calculated using windspeeds and loss rates.
-In high NOx environments where HCHO has a lifetime in the order of 30 minutes it can be used to map isoprene emissions with spatial resolution from 10-100 kms which is comparable to satellite resolutions.
-For conditions where VOCs have a lifetime of days are the major HCHO contributors a complex inversion would be required to map HCHO columns to VOC emissions.
+In high NOx environments where HCHO has a lifetime on the order of 30 minutes it can be used to map isoprene emissions with spatial resolution from 10-100 kms which is comparable to satellite resolutions.
+For conditions where VOCs have a lifetime of days determining the major HCHO contributors a complex inversion would be required to map HCHO columns to VOC emissions.
 This is due to the 'smearing' of source emissions at a greater range (order of 1000 kms) than the satellite column resolution.
 
 An alternative source of isoprene emissions exists: The Model of Emissions of Gases and Aerosols from Nature (MEGAN), which uses leaf area index, forest canopy modelling, and plant functional type emission factors to generate terrestrial isoprene emissions.
