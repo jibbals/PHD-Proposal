@@ -1,7 +1,6 @@
 PreliminaryLiteratureReview.tex
 NaturalAerosols.tex
 figures/MeganIsoprene1/MeganIsoprene1.png
-figures/MeganIsoprene/MeganIsoprene.png
 One_source_of_information_which__.tex
 CTMs.tex
 figures/boxmodel/boxmodel.png
