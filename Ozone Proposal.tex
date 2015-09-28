@@ -1,5 +1,7 @@
 \subsection{Stratospheric Ozone transport analysis}
-Working with doctors Simon Alexander and Robyn Schofield, I have analysed and filtered records of ozone profiles over Davis, Macquarie, and Melbourne to quantitatively determine instances of Stratosphere to Troposphere Transport events (STTs).
+In order to examine the impact of stratospheric ozone on the troposphere and understand potential drivers for ozone pollution at the earth's surface I have used records of ozone profiles to determine how often downward transportation events occur.
+
+Using ozonesondes provided by the (TODO: who owns these?), I have applied a Fourier bandwidth filter on ozone profiles over Davis, Macquarie, and Melbourne to quantitatively determine instances of Stratosphere to Troposphere Transport events (STTs).
 
 The vertical profiles of ozone volume mixing ratio are linearly interpolated to a regular grid with 20m resolution up to 14km altitude and are then bandpass filtered so as to retain perturbations on altitude scales between 0.5km - 5km. The choice of band limits is set empirically, but we note that to define an STT event, a clear increase above the background ozone level is needed, and a vertical limit of $\sim 5$~km removes seasonal-scale effects. 
 The ozone perturbation profile is analysed at altitudes from 2~km above the surface (to avoid surface pollution events) and 1~km below the tropopause (to avoid the sharp transition to stratospheric air producing spurious false positives). Perturbations above the 99~th percentile (locally) of all ozone levels are initially classified as STT events.
