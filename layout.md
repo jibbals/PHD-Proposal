@@ -12,7 +12,7 @@ GEOSChemLitReview.tex
 Satellites_of_Interest.tex
 figures/TN_GOME_SPECTRA/TN_GOME_SPECTRA.jpg
 section_Research_Proposal__.tex
-TODO_OVERARCHING_GOALS_PLANS_TIED__.tex
+subsection_Aims_begin_enumerate_item__.tex
 Ozone Proposal.tex
 figures/seasonaltropozone/seasonaltropozone.png
 figures/MelbEvent20050203/MelbEvent20050203.png
