@@ -4,6 +4,7 @@ figures/MeganIsoprene/MeganIsoprene.png
 One_source_of_information_which__.tex
 CTMs.tex
 figures/boxmodelbox/boxmodelbox.gif
+figures/boxmodel/boxmodel.png
 OzoneBG.tex
 figures/NEPMStandards/NEPMStandards.png
 Isop and HCHO .tex
