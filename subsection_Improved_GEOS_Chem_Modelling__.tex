@@ -3,7 +3,7 @@
 Higher resolution modelling over Australia will allow for both improved validation with in situ measurements, and regional scale simulation analysis. 
 Dust simulation in particular can be greatly improved with finer surface wind resolution and will be one of the areas I will focus on with validation against both in situ and satellite measurements of AOD and dust concentrations across Australia.
 One of my goals for my PHD will be to improve the GEOS-Chem model by setting up meteorological fields with higher horizontal resolution over Australia and NZ.
-This has been done already over China \cite{Chen_2009}, North America, and Europe ( 2 more cites needed) but not for anywhere in the southern hemisphere.
+This has been done already over China \cite{Chen_2009,Wang_2004}, North America, Europe, and the Amazon (TODO: 3 more cites needed).
 
 First sufficient disk space will be required to hold several years worth of high resolution meteorological data and emissions, this is expected to be to the order of 100s of gigabytes.
 After determining the desired spatial and temporal boundaries for improved resolution, raw data will be downloaded, verified, and re-gridded using partially written code from Bob Yantosca.
@@ -18,7 +18,7 @@ GEOS-Chem allows distributed-memory parallelisation which can improve chemistry 
 For many chemical species GEOS-Chem can be run in a nested fashion, with high resolution in regional areas (0.25$^{\circ}$ x 0.3125$^{\circ}$ over North America, ,Asia, or Europe) while a lower global resolution is implemented allowing more reasonable run times.
 This nested modelling requires some work in order to set up the emissions inventories but can greatly improve model accuracy.
 A good example of this is the nested simulation of CO run by \citet{Yan_2014} which improved mean model bias against the HIAPER Pole-to-Pole Observations (HIPPO) campaigns between 2009 and 2011 over the pacific ocean: from -9.2\% to 1.4\%.
-Another example of GEOS-Chem's nested model usage is the \citet{http://onlinelibrary.wiley.com/doi/10.1029/2004JD005237/pdf} paper which shows improved simulation accuracy at higher resolution against the Transport and Chemical Evolution over the Pacific (TRACE-P) campaign in spring 2001. 
+Another example of GEOS-Chem's nested model usage is the \citet{Wang_2004} paper which shows improved simulation accuracy at higher resolution against the Transport and Chemical Evolution over the Pacific (TRACE-P) campaign in spring 2001. 
 
 Within atmospheric models emissions are generally determined by a combination of base emissions and multiplicative scaling factors. 
 These scaling factors are used to account for temporal variability as well as allowing environmental parameterisations such as sub-grid surface wind speeds \cite{Ridley_2013,Zender_2003}.
