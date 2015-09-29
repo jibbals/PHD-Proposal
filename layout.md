@@ -17,7 +17,7 @@ Ozone Proposal.tex
 figures/seasonaltropozone/seasonaltropozone.png
 figures/MelbEvent20050203/MelbEvent20050203.png
 subsection_Isoprene_and_VOCs_model__.tex
-subsection_Dust_Working_with_Doctors__.tex
+subsection_Dust_Australian_dust_emissions__.tex
 figures/AeronetGood/AeronetGood.png
 subsection_Improved_GEOS_Chem_Modelling__.tex
 FutureGC.tex
