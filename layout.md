@@ -20,4 +20,5 @@ Improving GC.tex
 subsection_Isoprene_and_VOCs_model__.tex
 subsection_Dust_Working_with_Doctors__.tex
 figures/AeronetGood/AeronetGood.png
+subsection_Improved_GEOS_Chem_Modelling__.tex
 FutureGC.tex
