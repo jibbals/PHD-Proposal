@@ -8,7 +8,6 @@ OzoneBG.tex
 figures/NEPMStandards/NEPMStandards.png
 Isop and HCHO .tex
 DustBG.tex
-GEOSChemLitReview.tex
 Satellites_of_Interest.tex
 figures/TN_GOME_SPECTRA/TN_GOME_SPECTRA.jpg
 section_Research_Proposal__.tex
