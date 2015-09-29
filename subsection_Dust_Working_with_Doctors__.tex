@@ -1,5 +1,7 @@
 \subsection{Dust}
-Working with Doctors Jenny Fisher and Sam Marx, using GEOS-Chem model version 9.02 and comparing against AERONET and CoDii in situ data allows a model validation in an area which is largely estimated due to lack of ground based measurements.
+Australian dust emissions are largely estimated using global models which are not tuned for Australian conditions ridley\cite{Ridley_2013,Duncan_Fairlie_2007}.
+So how accurate are these models and how could we validate or improve the Australian estimates?
+Using GEOS-Chem model version 9.02 and comparing against AERONET and CoDii in situ data allows a model validation in an area which is largely estimated due to lack of ground based measurements.
 
 Running GEOS-Chem at 2x2.5 resolution, using offline GEOS-5 meteorological fields and DEAD dust mobilisation is based on surface wind speeds to the third power implemented by \citet{Duncan_Fairlie_2007}. We only model emission, deposition, and transport of dust and carbon, which allows for fast runtime. Running the full chemical model to see if dust was affected by other tracers found only negligible differences (in the order of 10-5 percent). With 2004 as the spin up year we stored monthly average columns of sources and sinks and AOD until November 2012.
 
