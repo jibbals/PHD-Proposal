@@ -16,7 +16,6 @@ subsection_Aims_begin_enumerate_item__.tex
 Ozone Proposal.tex
 figures/seasonaltropozone/seasonaltropozone.png
 figures/MelbEvent20050203/MelbEvent20050203.png
-Improving GC.tex
 subsection_Isoprene_and_VOCs_model__.tex
 subsection_Dust_Working_with_Doctors__.tex
 figures/AeronetGood/AeronetGood.png
