@@ -6,7 +6,7 @@ The continuity equations describe transport of a conserved quantity such as mass
 This allows us to record the chemical densities and transport over time as a model runs.
 The continuity equation links a quantity of a substance to the field in which it flows and can be described by the formula:
 \begin{eqnarray*}
-\frac{\partial \rho}{\partial t} + \nabla \cdot j = \sigma 
+    \frac{\partial \rho}{\partial t} + \nabla \cdot j &=& \sigma 
 \end{eqnarray*}
 Where $\rho$ is density, t is time, $\div$ is divergence, j is the flux of q (amount of q per unit area per unit time), and $\sigma$ is the generation of q per unit volume per unit time.
 Note that $\sigma$ can be positive or negative due to sources and sinks.
@@ -14,13 +14,13 @@ Note that $\sigma$ can be positive or negative due to sources and sinks.
 The type of model best suited to modelling the entire earth uses the Eulerian frame of reference, where the atmosphere is broken up into 3-D boxes with densities and transports calculated and stored for arbitrary sequential steps in time at each location.
 The mass balance equation must be satisfied in any realistic long term box model and is as follows: 
 \begin{eqnarray*}
-\frac{dm}{dt} &=& \sum{sources}-\sum{sinks} \\
-    &=& F_{in} + E + P - F_{out} - L - D \end{eqnarray*}
-where m is mass of a chemical and the other terms are as described in figure \ref{fig:boxModel}.
+    \frac{dm}{dt} &=& \sum{sources}-\sum{sinks} \\
+    &=& F_{in} + E + P - F_{out} - L - D 
+\end{eqnarray*}
+where m is mass of a chemical, E and D are emission and deposition, P and L are production and loss, and F is chemical transport in and out, as shown in figure \ref{fig:boxModel}.
 Many chemical species interact with each other through chemical gradients, catalyst reactions, intermediary and direct production and loss. 
 Any large chemical model will be solving this mass balance equation over highly coupled arrays of partial differential equations and this can be complicated and take a long time.
 
-Numerical solutions normally require initial or boundary conditions, which allow a solution at certain points which then can be used to solve further points in the system.
 If measurements exist they can be fed into CTMs as boundary and/or initial conditions in order to examine and reproduce real world concentrations.
 When initial measurements are uncertain then the simulated outcomes will also have uncertainty.
 Chemical production and loss models for various species can be run while using meteorological data to drive the transport within these models.
