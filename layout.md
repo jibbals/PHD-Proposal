@@ -1,8 +1,6 @@
 PreliminaryLiteratureReview.tex
 NaturalAerosols.tex
 One_source_of_information_which__.tex
-CTMs.tex
-figures/boxmodel/boxmodel.png
 OzoneBG.tex
 figures/NEPMStandards/NEPMStandards.png
 Isop and HCHO .tex
@@ -10,6 +8,8 @@ figures/MeganIsoprene1/MeganIsoprene1.png
 DustBG.tex
 Satellites_of_Interest.tex
 figures/TN_GOME_SPECTRA/TN_GOME_SPECTRA.jpg
+CTMs.tex
+figures/boxmodel/boxmodel.png
 section_Research_Proposal__.tex
 subsection_Aims_begin_enumerate_item__.tex
 Ozone Proposal.tex
