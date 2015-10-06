@@ -14,20 +14,23 @@ Emission factors represent quantities of a pollutant released to the atmosphere 
 For example, an emission factor for isoprene within a forest would include the requirement of sunshine and suitable temperature.
 \citet{Guenther_2006} shows how the Australian outback is among the worlds strongest isoprene sources with large forests near coastal cities having emission factors greater than 16 mg m$^{-2}$ h$^{-1}$ (see figure \ref{fig:meganisoprene}).
 
-Using satellite data from 1995 we have a broad measure of seasonal and medium term trends of HCHO over Australia.
-These records can be checked against modeled estimates of isoprene using the HCHO proxy as has been done in both North America and Africa, with satellite and aircraft data combined for validation \cite{Millet_2006, Marais_2014}.
+Using satellite data from 1995(see section \ref{satellites}) we have a broad measure of seasonal and interannual variability of HCHO over Australia.
+These records can be compared with modeled estimates of HCHO which is used as a proxy to estimate isoprene emissions.
+This has been done in North America, South America, and Africa, with satellite and aircraft data combined for validation \cite{Millet_2006, Marais_2014}.
 
-The methodology for calculating VOCs from HCHO is laid out in \citet{Palmer_2003} and takes into account the expected lifetime and reaction rates of the precursor VOCs and HCHO.
+The methodology for calculating VOCs from HCHO is laid out in Palmer et al. (2003), and takes into account the expected lifetime and reaction rates of the precursor VOCs and HCHO.
 Assuming HCHO is produced quickly from short-lived intermediates we get
 \begin{eqnarray*}
 VOC_i \overset{k_i}{\rightarrow} Y_i HCHO
 \end{eqnarray*}
-Where $Y_i$ is HCHO yields per C atom.
-Then assuming a steady state between the atmospheric HCHO column ($\Omega$ molecules $cm^{-2}$)  produced by oxidation of VOCs (VOC$_i$) and no horizontal transport:
+Where $Y_i$ is HCHO yield per C atom.
+Then assuming a steady state of atmospheric HCHO ($\Omega$ molecules $cm^{-2}$) produced by oxidation of VOCs (VOC$_i$) and no horizontal transport:
 \begin{eqnarray*}
 \Omega = \frac{1}{k_{HCHO}} \sum_{i} Y_i E_i
 \end{eqnarray*}
 Where i indexes a chemical species, and $E_i$ is emission fluxes ( C atoms $cm^{-2}s^{-1}$).
 
-Inferring the VOC emissions then requires estimates of the HCHO yield (Y$_i$) which can be attained via modelling as layed out in \citet{Millet_2006} where GEOS-Chem and Master Chemical Mechanism (MCM) where both used.
+Inferring the VOC emissions then requires estimates of the HCHO yield (Y$_i$) which can be attained via modelling as layed out in \citet{Millet_2006}.
 
+During low NO$_X$ environments, the precursor HCHO has a longer lifetime (days).
+This allows horizontal transport to occur and complicates the algorithms as an inversion is required in order to work out the HCHO source.
