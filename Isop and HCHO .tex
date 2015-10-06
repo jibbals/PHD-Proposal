@@ -1,14 +1,6 @@
-\subsection{Isoprene and formaldehyde(HCHO)}
+\subsection{Isoprene and formaldehyde (HCHO)}
 
-The primary source of ozone in the lower troposphere is chemical formation following emissions of precursor gases, including VOCs, and NOx.
-Globally the greatest sources of NOx are from fossil fuel combustion ($\sim$50\%), biomass burning ($\sim$20\%), lightning, and microbial activity in soils \citep{Delmas_1997}.
-NOx emissions are commonly estimated using an array of models and satellite data, with global tropospheric emissions at around 45 TgN yr$^{-1}$ \cite{Miyazaki_2011}.
-
-Greater uncertainty exists for VOC measurements due to short lifetimes and the difficulty of direct measurements.
-The dominant VOCs globally are isoprene and methane which each comprise around a third of the total, however methane is very long lived (years) and is well mixed in the atmosphere while isoprene levels are very volatile and spatially diverse.
-Estimates put global isoprene emission at roughly 550 Tg yr$^{-1}$ \cite{Guenther_2006, Monks_2014}, emitted globally mostly by trees and shrubs during the day.
-
-The main non-methane VOC (NMVOC) is isoprene, with emissions estimated at 500-750 Tg yr$^{-1}$ \cite{Guenther_2006}.
+The main non-methane VOC (NMVOC) is isoprene, with emissions estimated at 500-750 Tg yr$^-1$ \cite{Guenther_2006}.
 Isoprene is hard to directly measure, instead formaldehyde (HCHO) is often used as a proxy \cite{Marais_2012,bauwens2013satellite}.
 Satellites can use DOAS techniques with radiative transfer calculations on solar radiation absorption spectra to measure column HCHO.
 Several satellite data sets are publicly available and have been used to show increasing HCHO trends in developing countries \cite{Mahajan_2015}.
@@ -17,24 +9,12 @@ Biogenic isoprene emissions are far greater than anthropogenic emissions of VOCs
 The estimates for isoprene emissions lack verification, especially over Australia where very little work has been done to measure biogenic VOCs (BVOCs) like isoprene.
 This lack of accuracy in BVOC emissions has a large effect on determining with confidence the sources and distribution of pollutants including ozone and organic aerosols.
 Accuracy in VOC measurements is important: it has been shown that even the diurnal pattern of isoprene emissions has an effect on modelling ground level ozone \cite{Hewitt_2011,Fan_2004}.
-These uncertainties could explain why models of formaldehyde (HCHO) over Australia are not good at reproducing observed data \cite{Stavrakou_2009}
 
 One estimate of global isoprene emissions is the Model of Emissions of Gases and Aerosols from Nature (MEGAN), which uses leaf area index, forest canopy modelling, and plant functional type emission factors to generate terrestrial isoprene emissions.
 \citet{Guenther_2006} shows how the Australian outback is among the worlds strongest isoprene sources with large forests near coastal cities having emission factors greater than 16 mg m$^{-2}$ h$^{-1}$ (see figure \ref{fig:meganisoprene}).
 
-Atmospheric trace gas data exists over Wollongong university due to a Fourier transform spectrometer running since 1996, and some Australian measurements exist from campaigns such as the Measurements of Urban, Marine and Biogenic Air (MUMBA).
-However, these do not give a full overview of the continent's emissions. 
-Satellite-based observations cover the entire continent, although with larger uncertainties involved due to horizontal resolution, cloud cover, and various other factors. 
 Using satellite data from 1995 we have a broad measure of seasonal and medium term trends of HCHO over Australia.
-These records can be checked against modeled estimates of isoprene using the HCHO proxy as has been done in both North America and Africa, where satellite and aircraft data were combined for validation \cite{Millet_2006, Marais_2014}.
-
-Determination of purely biogenic emissions from satellite-based observations is possible by filtering out biomass burnings using the fire counts and AOD.
-The AATSR, Aqua, and Terra satellites have fire counts which can be used to determine when HCHO is caused by burnings or fire cloud plumes, as well as accounting for anthropogenic emissions (gas flaring).
-These data can effectively filter satellite HCHO measurements in order to compare with biogenic models and this process has been implemented already in a similar way over South Africa \cite{Marais_2012}.
-
-HCHO is an intermediate chemical product and can be used as a proxy for determining biogenic isoprene emissions. 
-Isoprene is commonly measured by proxy through satellite HCHO vertical column densities (VCDs). HCHO, once filtered for fire plumes and anthropogenic influences, can determine isoprene emission through the use of a chemical transport model (CTM).
-This method of inference has been used successfully in several countries including North America\cite{Palmer_2003}, South America\cite{Barkley_2013}, and Africa \cite{Marais_2012}.
+These records can be checked against modeled estimates of isoprene using the HCHO proxy as has been done in both North America and Africa, with satellite and aircraft data combined for validation \cite{Millet_2006, Marais_2014}.
 
 The methodology for calculating VOCs from HCHO is laid out in \citet{Palmer_2003} and takes into account the expected lifetime and reaction rates of the precursor VOCs and HCHO.
 Assuming HCHO is produced quickly from short-lived intermediates we get
@@ -48,5 +28,5 @@ Then assuming a steady state between the atmospheric HCHO column ($\Omega$ molec
 \end{eqnarray*}
 Where i indexes a chemical species, and $E_i$ is emission fluxes ( C atoms $cm^{-2}s^{-1}$).
 
-Inferring the VOC emissions then requires estimates of the HCHO yield (Y$_i$) which can be attained via modelling as layed out in \citet{Millet_2006}, wherein GEOS-Chem and Master Chemical Mechanism (MCM) were both run.
+Inferring the VOC emissions then requires estimates of the HCHO yield (Y$_i$) which can be attained via modelling as layed out in \citet{Millet_2006} where GEOS-Chem and Master Chemical Mechanism (MCM) where both used.
 
