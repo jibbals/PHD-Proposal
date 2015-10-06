@@ -2,16 +2,16 @@
 \subsubsection{Preliminary Results}
 The impact of stratospheric ozone on the troposphere is dependent on weather, season, temperature, and many other factors.
 To understand potential drivers for ozone pollution at the earth's surface there is a need to quantify how often and how intensely various ozone events occur.
-Here, records of ozone profiles are be used to determine how often stratospheric ozone descends into the troposphere.
+Here, records of ozone profiles provided by the department of the environment are be used to determine how often stratospheric ozone descends into the troposphere.
 
-Using ozonesonde measurements provided by the department of the environment, a Fourier bandwidth filter on ozone profiles over Davis, Macquarie, and Melbourne can quantitatively determine instances of Stratosphere to Troposphere Transport events (STTs).
 A Fourier bandwidth filter can remove components of a line based on the components frequency.
 For example a noisy ozone profile can be 'cleaned' by removing the high frequency components, while growth of ozone with altitude in the profile can be removed as a low frequency component. 
+With a Fourier bandwidth filter used on ozone profiles over Davis, Macquarie, and Melbourne we quantitatively determine instances of Stratosphere to Troposphere Transport events (STTs).
 
 The vertical profiles of ozone volume mixing ratio are linearly interpolated to a regular grid with 20m resolution up to 14km altitude and are then bandpass filtered so as to retain perturbations on altitude scales between 0.5km - 5km. 
 The choice of band limits is set empirically, however it should be noted that to define an STT event, a clear increase above the background ozone level is needed, and a vertical limit of $\sim 5$~km removes seasonal-scale effects. 
-The ozone perturbation profile is analysed at altitudes from 2~km above the surface (to avoid surface pollution events) and 1~km below the tropopause (to avoid the sharp transition to stratospheric air producing spurious false positives).
-Perturbations above the 99~th percentile (locally) of all ozone levels are initially classified as STT events.
+The ozone perturbation profile is examined between 2~km above the surface (to avoid surface pollution events) and 1~km below the tropopause (to avoid the sharp transition to stratospheric air).
+Perturbations above the 99~th percentile (locally) of all ozone levels are then classified as STT events.
 
 Ozone profiles from 2004 until 2013 show clear STT influence on about 15\% of the days which are measured: with 36, 50, 73 events recorded from 240, 390, 456 ozonesonde profiles respectively for Davis, Melbourne, and Macquarie.
 In addition to this STTs are shown to have seasonal cycles with more frequent occurrences in late summer at both Macquarie and Melbourne.
@@ -22,5 +22,3 @@ An examination of the seasonal behaviour of the tropospheric ozone according to 
 In order to look at the weather systems behind STTs synoptic scale pressure data is taken from the European Centre for Medium-Range Weather Forecasts (ECMWF) Re-Analysis Interim data set (ERA-I).
 STTs can often occur due to cut-off low and low front pressure systems and examples of each of these weather patterns which coincide with an STT determined from our algorithm gives a clear indication that the algorithm can be used robustly.
 One of these case studies involves a record breaking storm over Melbourne on the third of February 2005 and is shown in figure \ref{fig:MelbStormSonde}
-
-This work will also be useful in analysis and validation of the GEOS-Chem simulation of ozone over Australia and the near southern ocean, as clear vertical profiles over a long time period can be directly compared.
