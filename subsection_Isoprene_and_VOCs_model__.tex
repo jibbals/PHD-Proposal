@@ -1,10 +1,23 @@
 \subsection{Isoprene and VOCs model validation over Australia}
-\subsubsection{Preliminary Results}
+The primary source of ozone in the lower troposphere is chemical formation following emissions of precursor gases, including VOCs, and NO$_X$.
+Globally the greatest sources of NO$_X$ include fossil fuel combustion ($\sim$50\%), biomass burning ($\sim$20\%), lightning, and microbial activity in soils \citep{Delmas_1997}.
+Estimates using a global CTM (CHASER) constrained by measurements from two satellites as well as the in-situ measurements taken through LIDAR and aircraft (INTEX-B) put global tropospheric NO$_X$ emissions at 45.4 TgN yr$^{-1}$ in 2005 \cite{Miyazaki_2011}.
+The portion of NO$_X$ which was emitted by humans in 2010 estimated using satellite column data is 24.8 Tg N yr$^{-1}$ \cite{Streets_2013}.
+Greater uncertainty exists for VOC measurements due to short lifetimes and the difficulty of direct measurements.
+The dominant VOCs globally are isoprene and methane which each comprise around a third of the total, however methane is very long lived (years) and is well mixed in the atmosphere while isoprene levels are very volatile and spatially diverse.
+Estimates put global isoprene emission at roughly 550 Tg yr$^{-1}$ \cite{Guenther_2006, Monks_2014}, emitted globally mostly by trees and shrubs during the day.
 
-Satellite HCHO measurements exist since 2004 (OMI) and 2006 (GOME2), and the ground based measurements over Wollongong exist since 1996. 
-These data have already been downloaded and preliminarily examined.
+In Australia, biogenic ozone precursor sources are highly uncertain, impeding accurate ozone modelling and projections. These uncertainties could explain why models of formaldehyde (HCHO) over Australia are not good at reproducing observed data \cite{Stavrakou_2009}. Atmospheric HCHO data exists over Wollongong from an Fourier transform spectrometer running since (TODO:When running since?), and some Australian measurements exist from campaigns such as the Measurements of Urban, Marine and Biogenic Air (MUMBA).
+However these do not give a full overview of the continent's emissions. Satellite-based observations cover the entire continent, although with larger uncertainties involved due to horizontal resolution, cloud cover, and various other factors. 
 
+Determination of purely biogenic emissions from satellite-based observations is possible by filtering out biomass burnings using the fire counts and AOD.
+The AATSR, Aqua, and Terra satellites have fire counts which can be used to determine when HCHO is caused by burnings or fire cloud plumes, as well as accounting for anthropogenic emissions (gas flaring).
+These data can effectively filter satellite HCHO measurements in order to compare with biogenic models and this process has been implemented already in a similar way over South Africa \cite{Marais_2012}.
 
-\subsubsection{Going Forward}
-While the ground based data is spatially sparse it can be used as validation of models and satellite data. 
-Combining the long record of measurements from Wollongong with the decadal-scale satellite data and chemical transport modelling in this PhD project will allow the first large-scale quantification of isoprene measurements in Australia, paving the way for more accurate ozone projections.
+HCHO is an intermediate chemical product and can be used as a proxy for determining biogenic isoprene emissions. 
+Isoprene is commonly measured by proxy through satellite HCHO vertical column densities (VCDs). HCHO, once filtered for fire plumes and anthropogenic influences, can determine isoprene emission through the use of a chemical transport model (CTM).
+This method of inference has been used successfully in several countries including North America\cite{Palmer_2003}, South America\cite{Barkley_2013}, and Africa \cite{Marais_2012}.
+
+Satellite HCHO measurements exist since 2004 (OMI) and 2006 (GOME2), and the ground based measurements over Wollongong exist since 1996. While the ground based data is spatially sparse it can be used as validation of models and satellite data. Combining the long record of measurements from Wollongong with the decadal-scale satellite data and chemical transport modelling in this PhD project will allow the first large-scale quantification of isoprene measurements in Australia, paving the way for more accurate ozone projections.
+
+  
