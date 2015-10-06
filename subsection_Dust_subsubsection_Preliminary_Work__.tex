@@ -4,11 +4,13 @@ Australian dust emissions are largely estimated using global models which are no
 So how accurate are these models and how could we validate or improve the Australian estimates?
 Using GEOS-Chem model version 9.02 and comparing against AERONET and CoDii in situ data allows a model validation in an area which is largely estimated due to lack of ground based measurements.
 
-Running GEOS-Chem at 2x2.5 resolution, using offline GEOS-5 meteorological fields and DEAD dust mobilisation is based on surface wind speeds to the third power implemented by \citet{Duncan_Fairlie_2007}. We only model emission, deposition, and transport of dust and carbon, which allows for fast runtime. Running the full chemical model to see if dust was affected by other tracers found only negligible differences (in the order of 10-5 percent). With 2004 as the spin up year we stored monthly average columns of sources and sinks and AOD until November 2012.
+Running GEOS-Chem at 2x2.5 resolution, using offline GEOS-5 meteorological fields and DEAD dust mobilisation is based on surface wind speeds to the third power implemented by \citet{Duncan_Fairlie_2007}. 
+We only model emission, deposition, and transport of dust and carbon, which allows for fast runtime. Running the full chemical model to see if dust was affected by other tracers found only negligible differences (in the order of 10-5 percent).
+With 2004 as the spin up year we stored monthly average columns of sources and sinks and AOD until November 2012.
 
-A second run of the model with the Eyre basin dust source zeroed out quantified its' importance as a dust source region.
+Several model inaccuracies occur due to the low resolution of the GEOS-Chem simulation.
+A horizontal grid does not capturing the sub grid wind speed distribution \cite{Ridley_2013}, which should lead to an underestimation of dust production.
+Another problem lies in comparing area averages against in-situ data, which further reduces the model's ability to capture small scale dust events.
 
-TODO: More notes from Paper and validation of GOES dust simulation?
-TODO: 
-  
-Dust emission is considered to be dependent on surface wind speeds to the third order \cite{Duncan_Fairlie_2007}, and this introduces problems when the large horizontal grid does not capture the sub grid wind speed distribution \cite{Ridley_2013}.
+The largest problem remains that there are very few in-situ measurement stations recording AOD which are predominantly dust related.
+Two which do exist are within AERONET, Tinga Tingana and Birdsville, and a direct comparison between these sites can be seen in figure \ref{fig:AODComparison}
