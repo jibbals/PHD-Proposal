@@ -30,4 +30,4 @@ subsection_Improved_GEOS_Chem_resolution__.tex
 subsection_Ethics_Intellectual_Property_and__.tex
 subsection_Resources_The_Center_for__.tex
 FutureGC.tex
-figures/Gantt/GanttPHD.png
+figures/Gantt/Gantt.png
