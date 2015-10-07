@@ -24,7 +24,6 @@ subsection_Dust_subsubsection_Preliminary_Work__.tex
 figures/AeronetGood/AeronetGood.png
 Looking_at_the_seasonal_distribution__.tex
 figures/SeasonalAndBirdsville/SeasonalAndBirdsville.png
-figures/Regions/Regions.png
 subsubsection_Going_Forward_This_work__.tex
 subsection_Improved_GEOS_Chem_resolution__.tex
 subsection_Ethics_Intellectual_Property_and__.tex
