@@ -1,17 +1,19 @@
-\subsection{Improved GEOS-Chem Modelling resolution}
+\subsection{Improved GEOS-Chem resolution over Australia}
+\label{resolutionwork}
 \subsubsection{Preliminary Work}
-A preliminary understanding of the mechanics required to both build and run the model at various resolutions has been achieved through active modelling and work done at the seventh international GEOS-Chem conference.
-This will help with initial project planning.
+A preliminary understanding of the mechanics required to both build and run the model at various resolutions has been achieved through active modelling and participation in IGC7.
 
 \subsubsection{Going Forward}
 Higher resolution modelling over Australia will allow for both improved validation with in situ measurements, and regional scale simulation analysis. 
-Dust simulation in particular can be greatly improved with finer surface wind resolution and will be one of the areas I will focus on by comparing simulations against both in situ and satellite measurements of AOD and dust concentrations across Australia.
-During this PHD the GEOS-Chem model will be improved by allowing enhanced horizontal resolution over Australia and NZ.
+An increase in maximum resolution from 2$^{\circ}$x2.5$^{\circ}$ to 0.25$^{\circ}$x0.3125$^{\circ}$ will be implemented.
+Dust simulation in particular can be greatly improved with finer surface wind resolution.
+
+During this PhD the GEOS-Chem model will be improved by allowing enhanced horizontal resolution over Australia and possibly NZ.
 This has been done already over China \cite{Chen_2009,Wang_2004}, North America \cite{Zhang_2012}, Europe \cite{Protonotariou_2013}, and the Amazon \cite{Barkley_2013}.
 
-First sufficient disk space will be required to hold several years worth of high resolution meteorological data and emissions, this is expected to be to the order of 100s of gigabytes.
-After determining the desired spatial and temporal boundaries for improved resolution, raw data will be downloaded, verified, and re-gridded using partially written code from Bob Yantosca.
-All of the data will need be compared to other emissions estimates in order to ensure that we have an acceptable inventory for Australian emissions.
-Finally, emissions data needs to be reworked over the domain, ensuring emissions factors and chemistry is maintained.
+After determining the desired spatial and temporal boundaries for improved resolution, raw data will be downloaded, verified, and re-gridded using existing code (developed for other regions by the GEOS-Chem support team).
+To ensure that we have an acceptable inventory for Australian emissions existing inventories from state EPAs may need to be patched together.
+
+Finally, emissions data needs to be reworked over the domain, ensuring emissions factors are maintained.
 This last requirement may be eased by the new HEMCO module implemented within the ESMF environment (compatible with GEOS-Chem v10) which recalculates emissions on any user specified grid.
   
