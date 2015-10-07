@@ -13,6 +13,7 @@ figures/boxmodel/boxmodel.png
 section_Research_Proposal__.tex
 subsection_Aims_begin_enumerate_item__.tex
 Ozone Proposal.tex
+figures/FilterEG/FilterEG.png
 figures/seasonaltropozone/seasonaltropozone.png
 figures/MelbEvent20050203/MelbEvent20050203.png
 subsubsection_Going_Forward_Most_of__.tex
