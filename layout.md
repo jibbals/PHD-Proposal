@@ -16,7 +16,7 @@ Ozone Proposal.tex
 figures/FilterEG/FilterEG.png
 figures/seasonaltropozone/seasonaltropozone.png
 figures/MelbEvent20050203/MelbEvent20050203.png
-subsubsection_Going_Forward_Most_of__.tex
+subsubsection_STT_Discussion_Most_of__.tex
 subsection_Australian_isoprene_emissions_subsubsection__.tex
 figures/WorldHCHO/OmiAvg2.png
 subsubsection_Going_Forward_Filtering_out__.tex
